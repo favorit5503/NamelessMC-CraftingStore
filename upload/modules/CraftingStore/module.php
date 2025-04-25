@@ -53,7 +53,7 @@ class CraftingStoreModule extends Module
      * @var Widget $widgets
      * @var null $template
      */
-     public function onPageLoad(User $user, Pages $pages, Cache $cache, Smarty $smarty, $navs, Widgets $widgets, $template)
+     public function onPageLoad($user, $pages, $cache, $smarty, $navs, $widgets, $template)
     {
         // Permissions
         PermissionHandler::registerPermissions('CraftingStore', [
